@@ -12,3 +12,5 @@ This is currently a dependency-free static site. Open `index.html` directly in a
 - Semantic landing page sections based on the website brief
 - Person schema and social metadata in `index.html`
 - Responsive visual system for a grounded future-human brand direction
+- Photo-led About, AI + Soul, and embodied story sections
+- Featured projects section linking the Rick Broider ecosystem repositories

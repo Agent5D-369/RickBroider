@@ -177,7 +177,10 @@ p {
 .orientation,
 .domains,
 .ecosystem,
+.featured-projects,
 .ai-soul,
+.about-rick,
+.story-band,
 .contact {
   max-width: calc(var(--max) + 8rem);
   margin: 0 auto;
@@ -185,11 +188,51 @@ p {
 
 .orientation-grid,
 .patterns,
-.ai-soul {
+.ai-soul,
+.about-rick,
+.story-band {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 0.75fr);
   gap: clamp(2rem, 7vw, 6rem);
   align-items: start;
+}
+
+.about-rick,
+.story-band {
+  align-items: center;
+}
+
+.portrait-panel,
+.story-image {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(217, 169, 73, 0.28);
+  background: rgba(247, 245, 238, 0.04);
+}
+
+.portrait-panel::after,
+.story-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 54%, rgba(5, 11, 15, 0.42)),
+    radial-gradient(circle at 22% 18%, rgba(217, 169, 73, 0.2), transparent 16rem);
+  pointer-events: none;
+}
+
+.portrait-panel img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.story-image img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  object-position: center;
 }
 
 .rich-copy {
@@ -372,6 +415,58 @@ p {
   font-size: 0.95rem;
 }
 
+.projects-layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  min-height: 21rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.15rem, 2vw, 1.5rem);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(247, 245, 238, 0.06), rgba(247, 245, 238, 0.025)),
+    rgba(5, 16, 22, 0.76);
+}
+
+.project-card-large {
+  grid-column: span 2;
+  background:
+    linear-gradient(135deg, rgba(217, 169, 73, 0.18), rgba(33, 167, 182, 0.08) 42%, rgba(247, 245, 238, 0.04)),
+    rgba(5, 16, 22, 0.88);
+}
+
+.project-type {
+  margin-bottom: 1.2rem;
+  color: var(--gold-bright);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  font-size: clamp(1.45rem, 2.7vw, 2.45rem);
+}
+
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--gold-bright);
+  font-weight: 800;
+}
+
 .ai-soul {
   grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.8fr);
   align-items: center;
@@ -385,8 +480,9 @@ p {
 
 .image-panel img {
   width: 100%;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center top;
 }
 
 .contact {
@@ -419,8 +515,18 @@ p {
 
   .patterns,
   .ai-soul,
+  .about-rick,
+  .story-band,
   .orientation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card-large {
+    grid-column: span 2;
   }
 }
 
@@ -446,8 +552,13 @@ p {
 
   .route-grid,
   .domain-grid,
-  .ecosystem-list {
+  .ecosystem-list,
+  .projects-layout {
     grid-template-columns: 1fr;
+  }
+
+  .project-card-large {
+    grid-column: auto;
   }
 
   .domain {
