@@ -115,23 +115,141 @@ img {
 }
 
 .hero {
+  position: relative;
+  isolation: isolate;
   min-height: 100vh;
-  padding-top: 4.4rem;
+  display: grid;
+  align-items: end;
+  padding: 7.4rem clamp(1.15rem, 5vw, 4rem) 0;
   background: #02080c;
   overflow: hidden;
-}
-
-.hero picture,
-.hero-image {
-  width: 100%;
-}
-
-.hero-image {
-  height: calc(100vh - 4.4rem);
-  min-height: 42rem;
-  object-fit: cover;
-  object-position: center;
   border-bottom: 1px solid rgba(217, 169, 73, 0.35);
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(90deg, rgba(2, 8, 12, 0.98) 0%, rgba(3, 12, 17, 0.88) 34%, rgba(3, 12, 17, 0.38) 68%, rgba(3, 12, 17, 0.22) 100%),
+    linear-gradient(180deg, rgba(2, 8, 12, 0.24) 0%, rgba(2, 8, 12, 0.72) 100%),
+    url("assets/hero-transform-004.png") center / cover;
+  filter: saturate(0.95) contrast(1.05);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero::before {
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 68% 30%, rgba(217, 169, 73, 0.18), transparent 18rem),
+    radial-gradient(circle at 22% 36%, rgba(33, 167, 182, 0.14), transparent 24rem);
+}
+
+.hero::after {
+  right: clamp(11rem, 27vw, 34rem);
+  top: clamp(8rem, 18vh, 15rem);
+  z-index: -1;
+  width: clamp(18rem, 34vw, 36rem);
+  aspect-ratio: 1;
+  border: 1px solid rgba(217, 169, 73, 0.26);
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(circle, rgba(217, 169, 73, 0.15) 0 1px, transparent 1px 3.2rem),
+    conic-gradient(from 45deg, transparent 0 12deg, rgba(217, 169, 73, 0.2) 12deg 13deg, transparent 13deg 45deg);
+  opacity: 0.54;
+}
+
+.hero-inner {
+  width: min(100%, calc(var(--max) + 8rem));
+  min-height: calc(100vh - 7.4rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(19rem, 0.62fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: end;
+}
+
+.hero-copy {
+  align-self: center;
+  max-width: 52rem;
+  padding: clamp(2rem, 7vh, 5rem) 0 clamp(4rem, 9vh, 7rem);
+}
+
+.hero h1 {
+  max-width: 12.5ch;
+  margin-bottom: 1.3rem;
+  font-size: clamp(3.4rem, 7vw, 7.4rem);
+  line-height: 0.9;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1::after {
+  content: "";
+  display: block;
+  width: min(28rem, 72vw);
+  height: 2px;
+  margin-top: 1.4rem;
+  background: linear-gradient(90deg, var(--gold-bright), rgba(240, 201, 109, 0));
+}
+
+.hero-copy p:not(.section-kicker) {
+  max-width: 45rem;
+  color: rgba(247, 245, 238, 0.88);
+  font-size: clamp(1.05rem, 1.6vw, 1.34rem);
+  line-height: 1.64;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.9rem;
+}
+
+.button.secondary {
+  min-height: 3.15rem;
+  padding: 0 1.1rem;
+  border: 1px solid rgba(247, 245, 238, 0.28);
+  color: var(--ink);
+  background: rgba(4, 13, 18, 0.42);
+}
+
+.hero-cta {
+  box-shadow: 0 1rem 2.3rem rgba(217, 169, 73, 0.18);
+}
+
+.hero-cutout {
+  position: relative;
+  margin: 0;
+  align-self: end;
+  justify-self: end;
+  width: min(36vw, 34rem);
+  min-width: 19rem;
+}
+
+.hero-cutout::before {
+  content: "";
+  position: absolute;
+  inset: 18% 2% 0 10%;
+  z-index: -1;
+  background: radial-gradient(ellipse at center, rgba(217, 169, 73, 0.22), transparent 62%);
+  filter: blur(20px);
+}
+
+.hero-cutout img {
+  width: 100%;
+  max-height: calc(100vh - 6.2rem);
+  object-fit: contain;
+  object-position: bottom right;
+  filter: drop-shadow(-1.1rem 1.4rem 2rem rgba(0, 0, 0, 0.58));
 }
 
 .section {
@@ -640,6 +758,14 @@ p {
 }
 
 @media (max-width: 1080px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.46fr);
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 5.8rem);
+  }
+
   .route-grid,
   .ecosystem-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -677,10 +803,56 @@ p {
     display: none;
   }
 
-  .hero-image {
-    height: auto;
+  .hero {
+    min-height: auto;
+    padding-top: 5.7rem;
+  }
+
+  .hero-background {
+    background:
+      linear-gradient(180deg, rgba(2, 8, 12, 0.96) 0%, rgba(3, 12, 17, 0.84) 42%, rgba(3, 12, 17, 0.42) 100%),
+      url("assets/hero-transform-004.png") 63% center / cover;
+  }
+
+  .hero-inner {
     min-height: 0;
-    object-fit: contain;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero-copy {
+    padding: 1.5rem 0 1.6rem;
+  }
+
+  .hero h1 {
+    max-width: 10.5ch;
+    font-size: clamp(2.7rem, 13vw, 4.45rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-cutout {
+    width: min(82vw, 26rem);
+    min-width: 0;
+    justify-self: center;
+    margin-top: -1rem;
+  }
+
+  .hero-cutout img {
+    max-height: 30rem;
+  }
+
+  .hero::after {
+    right: -8rem;
+    top: 7rem;
+    width: 20rem;
   }
 
   .section {
