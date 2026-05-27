@@ -212,22 +212,29 @@
       <section class="patterns section" id="patterns">
         <div class="patterns-intro">
           <p class="section-kicker">Diagnostic Gateway</p>
-          <h2>The Top 7 Collapse Patterns</h2>
+          <h2>Find the hidden pattern before the system breaks.</h2>
           <p>
-            Most visionary projects do not fail because the vision is wrong. They fail because
-            the structure cannot hold the vision.
+            Most visionary projects do not collapse all at once. They lose coherence slowly
+            through invisible dynamics that feel personal until the pattern is named.
           </p>
-          <a class="button primary" href="#contact">Diagnose the pattern <span>→</span></a>
+          <p>
+            The diagnostic maps seven collapse patterns across leadership, governance,
+            communication, energy, culture, and execution without asking you to guess which one
+            you are in.
+          </p>
+          <a class="button primary" href="#contact">Request the diagnostic <span>→</span></a>
         </div>
-        <ol class="pattern-list">
-          <li><h3>Mission Drift</h3><p>The original purpose becomes diluted by urgency, conflict, or survival mode.</p></li>
-          <li><h3>Founder Bottleneck</h3><p>Too much meaning, power, and decision velocity depend on too few people.</p></li>
-          <li><h3>Role Confusion</h3><p>Unclear authority and ownership create friction, resentment, and duplicate work.</p></li>
-          <li><h3>Governance Chaos</h3><p>Ambiguity around decisions turns collaboration into avoidance or power struggle.</p></li>
-          <li><h3>Communication Collapse</h3><p>What remains unsaid becomes the hidden architecture of the system.</p></li>
-          <li><h3>Resource Leakage</h3><p>Energy, money, time, and attention drain through unresolved structural gaps.</p></li>
-          <li><h3>Culture Erosion</h3><p>The soul of the project disappears while the language of the mission remains.</p></li>
-        </ol>
+        <div class="symptom-panel" aria-label="Collapse pattern symptoms">
+          <p>If this is happening, there is probably a pattern underneath it.</p>
+          <ul class="symptom-list">
+            <li>Founder exhaustion with no clear transfer of ownership</li>
+            <li>Decision fog that keeps returning after every meeting</li>
+            <li>Unclear roles, quiet resentment, and duplicated effort</li>
+            <li>People avoiding the conversation everyone can feel</li>
+            <li>Momentum dropping even though the mission still feels true</li>
+            <li>Too much emotional labor held by too few people</li>
+          </ul>
+        </div>
       </section>
 
       <section class="thesis section">
@@ -366,13 +373,98 @@
       </section>
 
       <section class="contact section" id="contact">
-        <p class="section-kicker">Next Step</p>
-        <h2>For founders and system builders ready to stabilize the vision.</h2>
-        <p>
-          Use this as the front door for consulting inquiries, diagnostic work, podcast and
-          speaking invitations, ecosystem participation, and strategic collaboration.
-        </p>
-        <a class="button primary" href="mailto:hello@rickbroider.com">Start the conversation <span>→</span></a>
+        <div class="contact-copy">
+          <p class="section-kicker">Next Step</p>
+          <h2>For founders and system builders ready to stabilize the vision.</h2>
+          <p>
+            Use this as the front door for diagnostic work, consulting inquiries, podcast and
+            speaking invitations, ecosystem participation, and strategic collaboration.
+          </p>
+          <p>
+            The more clearly you name what feels incoherent, the more useful the first response
+            can be.
+          </p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/xgoqppgd" method="POST">
+          <input type="hidden" name="_subject" value="New RickBroider.com inquiry" />
+          <input class="honey" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Role / organization</span>
+              <input name="role_or_organization" type="text" placeholder="Founder, steward, operator, host..." />
+            </label>
+            <label>
+              <span>Website or project link</span>
+              <input name="project_link" type="url" placeholder="https://" />
+            </label>
+          </div>
+
+          <label>
+            <span>What kind of support are you exploring?</span>
+            <select name="inquiry_type" required>
+              <option value="">Choose one</option>
+              <option value="Collapse Pattern Diagnostic">Collapse Pattern Diagnostic</option>
+              <option value="Consulting / Systems Architecture">Consulting / Systems Architecture</option>
+              <option value="AI + Operations Integration">AI + Operations Integration</option>
+              <option value="Speaking / Podcast">Speaking / Podcast</option>
+              <option value="Partnership / Ecosystem">Partnership / Ecosystem</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>What feels incoherent, stuck, or ready to change?</span>
+            <textarea
+              name="what_feels_incoherent"
+              rows="6"
+              placeholder="A few sentences is enough. Name the pattern, pressure, team dynamic, or transition you are sensing."
+              required
+            ></textarea>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              <span>Timeline</span>
+              <select name="timeline">
+                <option value="">Choose one</option>
+                <option value="Now / urgent">Now / urgent</option>
+                <option value="Next 30 days">Next 30 days</option>
+                <option value="This quarter">This quarter</option>
+                <option value="Exploring">Exploring</option>
+              </select>
+            </label>
+            <label>
+              <span>Budget / capacity</span>
+              <select name="budget_capacity">
+                <option value="">Choose one</option>
+                <option value="Diagnostic first">Diagnostic first</option>
+                <option value="$1k-$3k">$1k-$3k</option>
+                <option value="$3k-$10k">$3k-$10k</option>
+                <option value="$10k+">$10k+</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="consent-row">
+            <input name="consent" type="checkbox" value="Agreed" required />
+            <span>I understand this form starts a human review process, not an automated emergency response.</span>
+          </label>
+
+          <button class="button primary" type="submit">Send inquiry <span>→</span></button>
+        </form>
       </section>
     </main>
   </body>

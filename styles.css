@@ -343,44 +343,47 @@ p {
   border-color: transparent;
 }
 
-.pattern-list {
-  display: grid;
-  gap: 0.7rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: pattern;
-}
-
-.pattern-list li {
-  counter-increment: pattern;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-  padding: 1rem;
+.symptom-panel {
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
   border: 1px solid rgba(247, 245, 238, 0.18);
   background: rgba(2, 8, 12, 0.72);
   backdrop-filter: blur(10px);
 }
 
-.pattern-list li::before {
-  content: counter(pattern);
+.symptom-panel > p {
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.symptom-list {
   display: grid;
-  place-items: center;
-  width: 2.2rem;
-  height: 2.2rem;
-  border: 1px solid rgba(217, 169, 73, 0.72);
-  color: var(--gold-bright);
-  font-weight: 900;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.pattern-list h3,
-.pattern-list p {
-  margin-bottom: 0;
+.symptom-list li {
+  display: grid;
+  grid-template-columns: 0.65rem 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.95rem 0;
+  border-top: 1px solid rgba(247, 245, 238, 0.12);
+  color: var(--muted);
+  line-height: 1.55;
 }
 
-.pattern-list p {
-  font-size: 0.94rem;
+.symptom-list li::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.52rem;
+  background: var(--gold-bright);
+  border-radius: 999px;
+  box-shadow: 0 0 18px rgba(217, 169, 73, 0.55);
 }
 
 .thesis {
@@ -488,8 +491,9 @@ p {
 .contact {
   min-height: 72vh;
   display: grid;
-  align-content: center;
-  justify-items: start;
+  grid-template-columns: minmax(0, 0.78fr) minmax(22rem, 0.95fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: start;
   background:
     linear-gradient(180deg, rgba(6, 19, 27, 0.18), rgba(6, 19, 27, 0.94)),
     radial-gradient(circle at 84% 44%, rgba(217, 169, 73, 0.22), transparent 26rem);
@@ -501,6 +505,107 @@ p {
 
 .contact p {
   max-width: 44rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  padding: clamp(1.1rem, 2.8vw, 1.6rem);
+  border: 1px solid rgba(247, 245, 238, 0.18);
+  background:
+    linear-gradient(180deg, rgba(247, 245, 238, 0.07), rgba(247, 245, 238, 0.025)),
+    rgba(2, 8, 12, 0.72);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.contact-form label span {
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(247, 245, 238, 0.18);
+  background: rgba(4, 13, 18, 0.82);
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.contact-form input,
+.contact-form select {
+  min-height: 3.2rem;
+  padding: 0 0.9rem;
+}
+
+.contact-form textarea {
+  min-height: 10rem;
+  resize: vertical;
+  padding: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(240, 201, 109, 0.75);
+  outline-offset: 2px;
+}
+
+.contact-form ::placeholder {
+  color: rgba(200, 195, 184, 0.52);
+}
+
+.consent-row {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.consent-row input {
+  width: 1rem;
+  min-height: 1rem;
+  margin-top: 0.16rem;
+  accent-color: var(--gold-bright);
+}
+
+.consent-row span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.contact-form .button {
+  width: fit-content;
+  margin-top: 0.35rem;
+  cursor: pointer;
+}
+
+.honey {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
 @media (max-width: 1080px) {
@@ -517,6 +622,7 @@ p {
   .ai-soul,
   .about-rick,
   .story-band,
+  .contact,
   .orientation-grid {
     grid-template-columns: 1fr;
   }
@@ -559,6 +665,14 @@ p {
 
   .project-card-large {
     grid-column: auto;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form .button {
+    width: 100%;
   }
 
   .domain {
