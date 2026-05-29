@@ -468,15 +468,17 @@ p {
 }
 
 .patterns {
-  grid-template-columns: minmax(0, 0.75fr) minmax(18rem, 0.7fr) minmax(22rem, 0.9fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(24rem, 1fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
   background:
-    linear-gradient(90deg, rgba(5, 16, 22, 0.94), rgba(5, 16, 22, 0.76)),
-    url("assets/hero-transform-007.png") center / cover;
-  border-block: 1px solid rgba(217, 169, 73, 0.34);
+    radial-gradient(circle at 82% 18%, rgba(33, 167, 182, 0.1), transparent 24rem),
+    linear-gradient(135deg, #051018 0%, #071821 52%, #050b0f 100%);
+  border-block: 1px solid rgba(217, 169, 73, 0.18);
 }
 
 .patterns-intro {
-  max-width: 38rem;
+  max-width: 42rem;
 }
 
 .button {
@@ -496,10 +498,11 @@ p {
 }
 
 .symptom-panel {
-  padding: clamp(1.2rem, 2.4vw, 1.8rem);
-  border: 1px solid rgba(247, 245, 238, 0.18);
-  background: rgba(2, 8, 12, 0.72);
-  backdrop-filter: blur(10px);
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  border: 1px solid rgba(217, 169, 73, 0.22);
+  background:
+    linear-gradient(180deg, rgba(247, 245, 238, 0.06), rgba(247, 245, 238, 0.025)),
+    rgba(2, 8, 12, 0.52);
 }
 
 .symptom-panel > p {
@@ -536,6 +539,15 @@ p {
   background: var(--gold-bright);
   border-radius: 999px;
   box-shadow: 0 0 18px rgba(217, 169, 73, 0.55);
+}
+
+.symptom-panel a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.6rem;
+  color: var(--gold-bright);
+  font-weight: 800;
 }
 
 .diagnostic-route-panel,
