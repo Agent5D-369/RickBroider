@@ -68,7 +68,7 @@ img {
   background: transparent;
   border-bottom: 0;
   backdrop-filter: none;
-  opacity: 1;
+  opacity: 0;
 }
 
 .brand,
@@ -78,6 +78,11 @@ img {
 .route-grid a {
   display: inline-flex;
   align-items: center;
+}
+
+.hero .button,
+.site-header a {
+  cursor: pointer;
 }
 
 .brand {
@@ -176,10 +181,7 @@ img {
   position: absolute;
   inset: 0;
   z-index: -3;
-  background:
-    linear-gradient(90deg, rgba(3, 9, 13, 0.96) 0%, rgba(3, 9, 13, 0.72) 50%, rgba(3, 9, 13, 0.24) 100%),
-    linear-gradient(180deg, rgba(3, 9, 13, 0.48) 0%, rgba(3, 9, 13, 0.22) 54%, rgba(3, 9, 13, 0.92) 100%),
-    url("assets/hero-regenerative-systems-bg.jpg") center / cover;
+  background: url("assets/hero-atf-target.png") center / cover;
   filter: saturate(1) contrast(1.02);
   opacity: 1;
 }
@@ -213,7 +215,7 @@ img {
   max-width: min(56vw, 57rem);
   min-width: 0;
   padding: clamp(12rem, 24vh, 15.4rem) 0 0 clamp(2rem, 3vw, 3.05rem);
-  opacity: 1;
+  opacity: 0;
 }
 
 .hero h1 {
@@ -281,24 +283,7 @@ img {
 }
 
 .hero-portrait {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  display: block;
-  width: min(36vw, 35rem);
-  max-height: 80vh;
-  margin: 0;
-  pointer-events: none;
-}
-
-.hero-portrait img {
-  width: 100%;
-  height: auto;
-  max-height: 80vh;
-  object-fit: contain;
-  object-position: right bottom;
-  filter: saturate(1) contrast(1);
+  display: none;
 }
 
 .section {
