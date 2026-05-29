@@ -181,8 +181,8 @@ img {
   position: absolute;
   inset: 0;
   z-index: -3;
-  background: url("assets/hero-atf-target.png") center / cover;
-  filter: saturate(1) contrast(1.02);
+  background: url("assets/hero-atf-target.png?v=20260529-exact-atf") center / cover no-repeat;
+  filter: none;
   opacity: 1;
 }
 
@@ -972,10 +972,7 @@ p {
   }
 
   .hero-background {
-    background:
-      linear-gradient(180deg, rgba(3, 9, 13, 0.72) 0%, rgba(3, 9, 13, 0.86) 38%, rgba(3, 9, 13, 0.64) 100%),
-      linear-gradient(90deg, rgba(3, 9, 13, 0.95) 0%, rgba(3, 9, 13, 0.66) 70%, rgba(3, 9, 13, 0.3) 100%),
-      url("assets/hero-regenerative-systems-bg.jpg") 46% center / cover;
+    background: url("assets/hero-atf-target.png?v=20260529-exact-atf") center / cover no-repeat;
   }
 
   .hero-inner {
