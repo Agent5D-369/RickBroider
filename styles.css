@@ -200,6 +200,7 @@ img {
 }
 
 .hero-inner {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -280,7 +281,25 @@ img {
 }
 
 .hero-portrait {
-  display: none;
+  position: absolute;
+  right: clamp(-7rem, -5vw, -2.5rem);
+  bottom: 0;
+  z-index: 0;
+  display: block;
+  width: min(43vw, 41rem);
+  max-height: 88vh;
+  margin: 0;
+  pointer-events: none;
+}
+
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: saturate(0.96) contrast(1.02);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 100%);
 }
 
 .section {
@@ -899,6 +918,12 @@ p {
     gap: 2rem;
   }
 
+  .hero-portrait {
+    right: -8rem;
+    width: min(46vw, 31rem);
+    opacity: 0.72;
+  }
+
   .hero h1 {
     font-size: clamp(3.2rem, 7.6vw, 5.4rem);
   }
@@ -1014,10 +1039,7 @@ p {
   }
 
   .hero-portrait {
-    width: min(82vw, 25rem);
-    min-width: 0;
-    justify-self: center;
-    margin-bottom: 2.6rem;
+    display: none;
   }
 
   .hero-portrait figcaption {
