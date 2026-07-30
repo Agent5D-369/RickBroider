@@ -327,6 +327,11 @@ p {
 }
 
 .orientation,
+.start-here,
+.ways,
+.authority,
+.thoughts,
+.faq,
 .domains,
 .ecosystem,
 .featured-projects,
@@ -392,6 +397,11 @@ p {
 }
 
 .route-grid,
+.router-grid,
+.ways-grid,
+.proof-grid,
+.thought-grid,
+.faq-grid,
 .domain-grid,
 .ecosystem-list {
   display: grid;
@@ -1082,5 +1092,139 @@ p {
 
   .thesis {
     min-height: 44vh;
+  }
+}
+.start-here,
+.ways,
+.thoughts,
+.faq {
+  border-top: 1px solid rgba(247, 245, 238, 0.08);
+}
+
+.router-grid,
+.ways-grid,
+.proof-grid,
+.thought-grid,
+.faq-grid {
+  gap: 1rem;
+}
+
+.router-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ways-grid,
+.thought-grid,
+.faq-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.router-grid article,
+.ways-grid article,
+.thought-grid article,
+.faq-grid article,
+.calendar-card,
+.proof-grid article {
+  padding: clamp(1.15rem, 2.2vw, 1.65rem);
+  border: 1px solid rgba(247, 245, 238, 0.13);
+  background: rgba(247, 245, 238, 0.035);
+}
+
+.router-grid article,
+.ways-grid article,
+.thought-grid article,
+.faq-grid article {
+  min-height: 13rem;
+}
+
+.router-grid a,
+.ways-grid a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  color: var(--gold-bright);
+  font-weight: 800;
+}
+
+.way-label {
+  margin: 0 0 0.7rem;
+  color: var(--gold-bright);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.authority {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(24rem, 1fr);
+  gap: clamp(2.4rem, 6vw, 5rem);
+  align-items: start;
+  border-block: 1px solid rgba(217, 169, 73, 0.2);
+  background:
+    radial-gradient(circle at 86% 18%, rgba(217, 169, 73, 0.12), transparent 22rem),
+    linear-gradient(135deg, rgba(4, 13, 18, 0.92), rgba(7, 27, 37, 0.72));
+}
+
+.authority-copy p:not(.section-kicker) {
+  max-width: 42rem;
+}
+
+.proof-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.proof-grid article span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--gold-bright);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.proof-grid article p {
+  margin-bottom: 0;
+}
+
+.calendar-card {
+  margin-top: 2rem;
+}
+
+.calendar-card h3 {
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+}
+
+.calendar-card .button {
+  width: fit-content;
+}
+/* Responsive overrides for added brand sections. */
+@media (max-width: 1080px) {
+  .router-grid,
+  .ways-grid,
+  .thought-grid,
+  .faq-grid,
+  .ecosystem-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .authority {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .router-grid,
+  .ways-grid,
+  .proof-grid,
+  .thought-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-card .button {
+    width: 100%;
   }
 }
