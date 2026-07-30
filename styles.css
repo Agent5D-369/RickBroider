@@ -209,6 +209,39 @@ img {
   display: block;
 }
 
+.hero-hotspots {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.hero-hotspot {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hero-hotspot:focus-visible {
+  outline: 3px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+
+.hero-hotspot-primary {
+  left: clamp(3.1rem, 3vw, 3.65rem);
+  top: min(75.4vh, 48rem);
+  width: clamp(17rem, 17.2vw, 21.5rem);
+  height: clamp(4.5rem, 7.9vh, 5.6rem);
+}
+
+.hero-hotspot-secondary {
+  left: clamp(21.5rem, 21.9vw, 26rem);
+  top: min(76.4vh, 48.5rem);
+  width: clamp(11rem, 11.8vw, 14rem);
+  height: clamp(3.2rem, 5.8vh, 4.2rem);
+}
+
 .hero-copy {
   position: relative;
   z-index: 1;
@@ -991,6 +1024,10 @@ p {
   .hero {
     min-height: 100svh;
     padding: 0 clamp(1rem, 5vw, 1.35rem);
+  }
+
+  .hero-hotspots {
+    display: none;
   }
 
   .hero-background {
