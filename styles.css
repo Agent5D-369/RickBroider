@@ -242,6 +242,48 @@ img {
   height: clamp(3.2rem, 5.8vh, 4.2rem);
 }
 
+.hero-visual-actions {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hero-visual-button {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.35rem;
+  font-weight: 820;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.hero-visual-button-primary {
+  left: clamp(3.1rem, 3vw, 3.65rem);
+  top: min(75.4vh, 48rem);
+  width: clamp(17rem, 17.2vw, 21.5rem);
+  height: clamp(4.5rem, 7.9vh, 5.6rem);
+  border: 1px solid rgba(7, 16, 23, 0.14);
+  border-radius: 0.35rem;
+  background: linear-gradient(180deg, #f2c96f, #e3ad4e);
+  box-shadow: 0 1rem 2.3rem rgba(217, 169, 73, 0.18);
+  color: #071017;
+  font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+}
+
+.hero-visual-button-secondary {
+  left: clamp(21.5rem, 21.9vw, 26rem);
+  top: min(76.4vh, 48.5rem);
+  height: clamp(3.2rem, 5.8vh, 4.2rem);
+  padding: 0 0.2rem;
+  border-bottom: 1px solid rgba(217, 169, 73, 0.72);
+  background: linear-gradient(180deg, rgba(3, 9, 13, 0.78), rgba(3, 9, 13, 0.54));
+  color: rgba(247, 245, 238, 0.94);
+  font-size: clamp(1.05rem, 1.35vw, 1.32rem);
+}
+
 .hero-copy {
   position: relative;
   z-index: 1;
@@ -364,6 +406,8 @@ p {
 .ways,
 .authority,
 .thoughts,
+.intro-call,
+.signal-proof,
 .faq,
 .domains,
 .ecosystem,
@@ -1026,7 +1070,8 @@ p {
     padding: 0 clamp(1rem, 5vw, 1.35rem);
   }
 
-  .hero-hotspots {
+  .hero-hotspots,
+  .hero-visual-actions {
     display: none;
   }
 
@@ -1265,5 +1310,77 @@ p {
 
   .calendar-card .button {
     width: 100%;
+  }
+}
+.intro-call,
+.signal-proof {
+  border-top: 1px solid rgba(247, 245, 238, 0.08);
+}
+
+.call-grid,
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.call-grid article,
+.cred-grid article {
+  padding: clamp(1.15rem, 2.2vw, 1.65rem);
+  border: 1px solid rgba(247, 245, 238, 0.13);
+  background: rgba(247, 245, 238, 0.035);
+}
+
+.call-grid article span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--gold-bright);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.logo-cloud {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  background: rgba(247, 245, 238, 0.14);
+  border: 1px solid rgba(247, 245, 238, 0.14);
+}
+
+.logo-cloud span {
+  display: grid;
+  min-height: 5rem;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(4, 13, 18, 0.92);
+  color: rgba(247, 245, 238, 0.9);
+  font-size: clamp(0.82rem, 1.1vw, 1rem);
+  font-weight: 820;
+  text-align: center;
+}
+
+.signal-proof .cred-grid {
+  margin-top: 1rem;
+}
+/* Responsive proof and call grids. */
+@media (max-width: 1080px) {
+  .call-grid,
+  .cred-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .logo-cloud {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .call-grid,
+  .cred-grid,
+  .logo-cloud {
+    grid-template-columns: 1fr;
   }
 }
