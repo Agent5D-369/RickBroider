@@ -1384,3 +1384,154 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.interview,
+.search-intent {
+  border-top: 1px solid rgba(247, 245, 238, 0.08);
+}
+
+.conversation-grid,
+.intent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.conversation-grid article,
+.intent-grid a {
+  min-height: 15rem;
+  padding: clamp(1.15rem, 2.2vw, 1.65rem);
+  border: 1px solid rgba(247, 245, 238, 0.13);
+  background: rgba(247, 245, 238, 0.035);
+}
+
+.intent-grid a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.intent-grid span {
+  color: var(--gold-bright);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intent-grid strong {
+  color: var(--ink);
+  font-size: clamp(1.12rem, 1.45vw, 1.42rem);
+  line-height: 1.22;
+}
+
+.pillar-page .site-header {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(3, 9, 13, 0.92), rgba(3, 9, 13, 0.2));
+}
+
+.pillar-hero {
+  max-width: calc(var(--max) + 8rem);
+  min-height: 82vh;
+  margin: 0 auto;
+  padding-top: clamp(9rem, 18vh, 13rem);
+  background:
+    linear-gradient(90deg, rgba(3, 9, 13, 0.94) 0%, rgba(3, 9, 13, 0.72) 54%, rgba(3, 9, 13, 0.34) 100%),
+    url("assets/hero-regenerative-systems-bg.jpg") center / cover no-repeat;
+}
+
+.pillar-hero h1 {
+  max-width: 12ch;
+  margin-bottom: 1.35rem;
+  font-size: clamp(3.2rem, 7vw, 6.4rem);
+  font-weight: 430;
+  line-height: 0.95;
+}
+
+.pillar-hero > p:not(.section-kicker) {
+  max-width: 48rem;
+  color: rgba(247, 245, 238, 0.9);
+  font-size: clamp(1.08rem, 1.45vw, 1.32rem);
+}
+
+.pillar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pillar-body,
+.pillar-questions {
+  max-width: calc(var(--max) + 8rem);
+  margin: 0 auto;
+}
+
+.pillar-body {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pillar-panel {
+  min-height: 22rem;
+  padding: clamp(1.15rem, 2.2vw, 1.65rem);
+  border: 1px solid rgba(247, 245, 238, 0.13);
+  background: rgba(247, 245, 238, 0.035);
+}
+
+.pillar-panel h2 {
+  max-width: 11ch;
+  font-size: clamp(1.9rem, 3.4vw, 3.3rem);
+}
+
+.pillar-questions ul {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 58rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.pillar-questions li {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(247, 245, 238, 0.13);
+  background: rgba(247, 245, 238, 0.035);
+  color: var(--muted);
+}
+
+.thought-grid a {
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: 1080px) {
+  .conversation-grid,
+  .intent-grid,
+  .pillar-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .conversation-grid,
+  .intent-grid,
+  .pillar-body {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar-hero {
+    min-height: auto;
+    padding-top: 7.5rem;
+  }
+
+  .pillar-actions {
+    flex-direction: column;
+  }
+
+  .pillar-actions .button {
+    width: 100%;
+  }
+}
