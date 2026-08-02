@@ -1343,23 +1343,44 @@ p {
 
 .logo-cloud {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1px;
   margin-top: clamp(2.5rem, 5vw, 4rem);
   background: rgba(247, 245, 238, 0.14);
   border: 1px solid rgba(247, 245, 238, 0.14);
 }
 
-.logo-cloud span {
+.logo-cloud a {
   display: grid;
-  min-height: 5rem;
+  min-height: 6.5rem;
   place-items: center;
+  gap: 0.7rem;
   padding: 1rem;
   background: rgba(4, 13, 18, 0.92);
   color: rgba(247, 245, 238, 0.9);
-  font-size: clamp(0.82rem, 1.1vw, 1rem);
-  font-weight: 820;
   text-align: center;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.logo-cloud a:hover,
+.logo-cloud a:focus-visible {
+  background: rgba(217, 169, 73, 0.12);
+  color: var(--cream);
+  outline: none;
+}
+
+.logo-cloud img {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+.logo-cloud span {
+  font-size: clamp(0.78rem, 1vw, 0.95rem);
+  font-weight: 820;
+  line-height: 1.2;
 }
 
 .signal-proof .cred-grid {
