@@ -229,24 +229,21 @@ img {
 }
 
 .hero-hotspot-primary {
-  left: clamp(3.1rem, 3vw, 3.65rem);
-  top: min(75.4vh, 48rem);
-  width: clamp(17rem, 17.2vw, 21.5rem);
-  height: clamp(4.5rem, 7.9vh, 5.6rem);
+  left: clamp(2.8rem, 3vw, 3.75rem);
+  top: min(81vh, 50rem);
+  width: clamp(17.5rem, 18vw, 22rem);
+  height: clamp(4.8rem, 8.2vh, 6rem);
 }
 
 .hero-hotspot-secondary {
-  left: clamp(21.5rem, 21.9vw, 26rem);
-  top: min(76.4vh, 48.5rem);
-  width: clamp(11rem, 11.8vw, 14rem);
-  height: clamp(3.2rem, 5.8vh, 4.2rem);
+  left: clamp(21.5rem, 22vw, 27rem);
+  top: min(81.8vh, 50.7rem);
+  width: clamp(12rem, 13vw, 15rem);
+  height: clamp(3.6rem, 6.2vh, 4.6rem);
 }
 
 .hero-visual-actions {
-  position: absolute;
-  inset: 0;
-  z-index: 5;
-  pointer-events: none;
+  display: none;
 }
 
 .hero-visual-button {
