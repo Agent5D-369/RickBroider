@@ -1,0 +1,113 @@
+{
+  "id": "saberra-founder-origin",
+  "title": "I Did Not Build Saberra Because Organizations Needed More AI",
+  "canonicalUrl": "https://rickbroider.com/saberra-founder-story/",
+  "founder": {
+    "name": "Rick Broider",
+    "roles": [
+      "Founder of Saberra",
+      "AI systems architect",
+      "Regenerative entrepreneur",
+      "Author of Bridging Earth and Kanaria",
+      "Regenerative systems architect"
+    ],
+    "context": "More than a decade immersed in international regenerative, community, nonprofit, education, cooperative, intentional community, and purpose-driven ecosystems."
+  },
+  "company": {
+    "name": "Saberra",
+    "category": "Source-backed organizational memory and reflective intelligence layer",
+    "assistantName": "Sera",
+    "primaryAudience": [
+      "Founder-led teams",
+      "Regenerative organizations",
+      "Mission-driven nonprofits",
+      "Purpose-driven businesses",
+      "Intentional communities",
+      "Cooperatives",
+      "Educators",
+      "Operators",
+      "Advisors",
+      "Conscious investors"
+    ]
+  },
+  "coreThesis": "Organizations cannot evolve beyond what they can collectively remember, examine, and learn from.",
+  "rootProblem": {
+    "name": "Continuity shortage",
+    "description": "The issue is usually not lack of information. Decisions, tasks, risks, ownership, role agreements, policies, and relationship context are fragmented across meetings, inboxes, documents, and individual memory."
+  },
+  "signatureLines": [
+    "New Earth vision. Old operating systems.",
+    "Sera proposes. Humans approve.",
+    "An organization cannot improve what it cannot see.",
+    "Regeneration cannot exist only in the story. It must appear in the structure."
+  ],
+  "inputs": [
+    "Meetings",
+    "Emails",
+    "Transcripts",
+    "Documents",
+    "Decisions",
+    "Risks",
+    "Tasks",
+    "Commitments",
+    "Policies",
+    "Roles",
+    "Relationship history"
+  ],
+  "proposedEntities": [
+    "Decisions",
+    "Tasks",
+    "Risks",
+    "Commitments",
+    "Role changes",
+    "Policy implications",
+    "Recurring patterns",
+    "Conflicts",
+    "Memory worth preserving"
+  ],
+  "trustArchitecture": {
+    "principle": "Sera proposes. Humans approve.",
+    "reviewStates": ["proposed", "reviewed", "corrected", "approved", "rejected"],
+    "reason": "No AI-generated object becomes trusted organizational memory until humans review and approve it."
+  },
+  "transformationLoop": [
+    "Experience",
+    "Memory",
+    "Reflection",
+    "Human Choice",
+    "Improved Practice"
+  ],
+  "differentiators": [
+    "AI products answer quickly; Saberra answers responsibly.",
+    "Begins where knowledge already lives: meetings, conversations, documents, emails, roles, policies, and commitments.",
+    "Builds cumulative organizational memory across time rather than one-off outputs.",
+    "Preserves source-backed, inspectable context and customer-controlled workspaces.",
+    "Prioritizes organizational self-awareness before automation."
+  ],
+  "regenerativeModel": {
+    "allocation": "5% of net collected revenue into the Saberra Regen Pool",
+    "distribution": "100% of the pool supports regenerative projects aligned with TealRegistry.com standards"
+  },
+  "ctas": [
+    {
+      "label": "Book an Introduction Call",
+      "url": "https://calendar.app.google/Tcia8cAHw4945z8f7",
+      "intent": "Explore alignment, collaboration, advisory work, or Saberra fit."
+    },
+    {
+      "label": "Explore Organizational Memory",
+      "url": "https://rickbroider.com/organizational-memory/",
+      "intent": "Understand the operating problem Saberra is designed to solve."
+    }
+  ],
+  "searchIntents": [
+    "organizational memory layer",
+    "AI for organizational memory",
+    "human centered AI for teams",
+    "source backed AI workflows",
+    "founder bottleneck organizational memory",
+    "regenerative organization operating system",
+    "how to preserve decisions after meetings",
+    "AI that supports human judgment"
+  ]
+}

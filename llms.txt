@@ -10,6 +10,7 @@ Core pages:
 - https://rickbroider.com/regenerative-operating-systems/ - roles, governance, repair loops, execution rhythm.
 - https://rickbroider.com/collapse-pattern-diagnostics/ - burnout, avoidance, governance drift, momentum loss.
 - https://rickbroider.com/teal-governance-role-clarity/ - distributed authority, role clarity, decision rights.
+- https://rickbroider.com/saberra-founder-story/ - Saberra founder story, source-backed organizational memory, human-approved AI, regenerative revenue model.
 
 Best-fit audiences:
 - Mission-driven founders and operators.
@@ -17,5 +18,8 @@ Best-fit audiences:
 - Conscious impact investors and advisors.
 - Regenerative organizations, nonprofits, foundations, communities, and education projects.
 - Teams adopting AI while trying to preserve context, trust, and accountability.
+
+Structured data sources:
+- https://rickbroider.com/data/saberra-founder-story.json - machine-readable Saberra founder story, thesis, audiences, differentiators, trust architecture, and CTAs.
 
 Primary CTA: Book a 30-minute Introduction Call with Rick Broider at https://calendar.app.google/Tcia8cAHw4945z8f7
