@@ -69,6 +69,7 @@ img {
   border-bottom: 0;
   backdrop-filter: none;
   opacity: 0;
+  pointer-events: none;
 }
 
 .brand,
@@ -209,78 +210,48 @@ img {
   display: block;
 }
 
-.hero-hotspots {
+.hero-desktop-actions {
   position: absolute;
-  inset: 0;
-  z-index: 6;
-  pointer-events: none;
-}
-
-.hero-hotspot {
-  position: absolute;
-  display: block;
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.hero-hotspot:focus-visible {
-  outline: 3px solid var(--gold-bright);
-  outline-offset: 4px;
-}
-
-.hero-hotspot-primary {
-  left: clamp(2.75rem, 3vw, 3.75rem);
-  top: min(73.6vh, 45.8rem);
-  width: clamp(17.8rem, 18.6vw, 23rem);
-  height: clamp(5.2rem, 9vh, 6.6rem);
-}
-
-.hero-hotspot-secondary {
-  left: clamp(21rem, 21.6vw, 26.5rem);
-  top: min(74.3vh, 46.4rem);
-  width: clamp(12.4rem, 13.6vw, 16rem);
-  height: clamp(4rem, 7vh, 5rem);
-}
-
-.hero-visual-actions {
-  display: none;
-}
-
-.hero-visual-button {
-  position: absolute;
-  display: inline-flex;
+  left: clamp(2.9rem, 3vw, 3.7rem);
+  top: min(72.7vh, 45.2rem);
+  z-index: 7;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.35rem;
-  font-weight: 820;
-  letter-spacing: 0;
-  white-space: nowrap;
+  gap: clamp(1.55rem, 2.5vw, 2.6rem);
 }
 
-.hero-visual-button-primary {
-  left: clamp(3.1rem, 3vw, 3.65rem);
-  top: min(75.4vh, 48rem);
-  width: clamp(17rem, 17.2vw, 21.5rem);
-  height: clamp(4.5rem, 7.9vh, 5.6rem);
-  border: 1px solid rgba(7, 16, 23, 0.14);
-  border-radius: 0.35rem;
-  background: linear-gradient(180deg, #f2c96f, #e3ad4e);
-  box-shadow: 0 1rem 2.3rem rgba(217, 169, 73, 0.18);
-  color: #071017;
-  font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+.hero-desktop-actions::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: -0.85rem;
+  right: -1rem;
+  top: -1rem;
+  bottom: -1rem;
+  background:
+    radial-gradient(circle at 76% 44%, rgba(10, 23, 27, 0.84), rgba(8, 18, 23, 0.74) 42%, rgba(5, 13, 18, 0.1) 76%),
+    linear-gradient(90deg, rgba(3, 9, 13, 0.96), rgba(3, 9, 13, 0.8) 58%, rgba(3, 9, 13, 0.22));
+  filter: blur(0.08rem);
+  border-radius: 0.6rem;
 }
 
-.hero-visual-button-secondary {
-  left: clamp(21.5rem, 21.9vw, 26rem);
-  top: min(76.4vh, 48.5rem);
-  height: clamp(3.2rem, 5.8vh, 4.2rem);
-  padding: 0 0.2rem;
-  border-bottom: 1px solid rgba(217, 169, 73, 0.72);
-  background: linear-gradient(180deg, rgba(3, 9, 13, 0.78), rgba(3, 9, 13, 0.54));
+.hero-desktop-actions .button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-desktop-actions .button.primary {
+  min-width: clamp(17rem, 17.2vw, 21.5rem);
+  min-height: clamp(4.35rem, 7.2vh, 5.35rem);
+  border-radius: 0.34rem;
+  font-size: clamp(1.05rem, 1.35vw, 1.36rem);
+}
+
+.hero-desktop-actions .button.secondary {
+  min-height: clamp(3.1rem, 5.5vh, 4rem);
   color: rgba(247, 245, 238, 0.94);
-  font-size: clamp(1.05rem, 1.35vw, 1.32rem);
+  font-size: clamp(1.05rem, 1.3vw, 1.32rem);
 }
-
 .hero-copy {
   position: relative;
   z-index: 1;
@@ -288,6 +259,7 @@ img {
   min-width: 0;
   padding: clamp(12rem, 24vh, 15.4rem) 0 0 clamp(2rem, 3vw, 3.05rem);
   opacity: 0;
+  pointer-events: none;
 }
 
 .hero h1 {
@@ -990,6 +962,7 @@ p {
   width: 1px;
   height: 1px;
   opacity: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 1080px) {
@@ -1067,8 +1040,7 @@ p {
     padding: 0 clamp(1rem, 5vw, 1.35rem);
   }
 
-  .hero-hotspots,
-  .hero-visual-actions {
+  .hero-desktop-actions {
     display: none;
   }
 
@@ -1090,6 +1062,7 @@ p {
     max-width: 100%;
     padding: clamp(6.4rem, 17svh, 8rem) 0 2rem;
     opacity: 1;
+    pointer-events: auto;
   }
 
   .hero h1 {
