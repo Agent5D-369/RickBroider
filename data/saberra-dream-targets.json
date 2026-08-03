@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-08-03",
+  "site": "https://rickbroider.com/",
+  "indexNow": {
+    "key": "7196ced0834f25ba",
+    "keyLocation": "https://rickbroider.com/7196ced0834f25ba.txt",
+    "host": "rickbroider.com",
+    "urlListFile": "https://rickbroider.com/search-submission-urls.txt"
+  },
+  "manualSubmissionTargets": [
+    "Google Search Console sitemap submission",
+    "Bing Webmaster Tools sitemap submission",
+    "IndexNow batch URL submission",
+    "LinkedIn profile/company post link recrawl via high-signal shares",
+    "Podcast one-sheet/profile pages once created"
+  ],
+  "dreamTargetPriority": [
+    {
+      "rank": 1,
+      "segment": "Fractional COOs, Chiefs of Staff, EOS Implementers, and Ops Consultants",
+      "fit": "Highest",
+      "painLanguage": "The founder is still the memory system. Decisions, tasks, risks, and ownership disappear between meetings.",
+      "buyerLanguage": "Saberra gives fractional COOs, Chiefs of Staff, and operators a source-backed memory layer they can install inside messy teams, so decisions, tasks, risks, and ownership stop disappearing between meetings.",
+      "searchIntents": [
+        "fractional COO tools for founder-led companies",
+        "Chief of Staff operating system for decisions and follow-up",
+        "EOS implementation decision tracking",
+        "source-backed organizational memory for operators"
+      ],
+      "bestPages": ["https://rickbroider.com/organizational-memory/", "https://rickbroider.com/ai-supported-operations/", "https://rickbroider.com/saberra-founder-story/"]
+    },
+    {
+      "rank": 2,
+      "segment": "Founder-led companies growing past the founder's brain",
+      "fit": "Very high",
+      "painLanguage": "I am tired of being the only one who remembers why we decided things.",
+      "buyerLanguage": "Saberra helps founder-led teams move from founder memory to organizational memory, so the company can grow without forcing one person to carry the whole operating system in their head.",
+      "searchIntents": [
+        "founder bottleneck solutions",
+        "company depends on founder memory",
+        "how to delegate founder context",
+        "organizational memory for founder-led teams"
+      ],
+      "bestPages": ["https://rickbroider.com/founder-bottleneck/", "https://rickbroider.com/organizational-memory/", "https://rickbroider.com/"]
+    },
+    {
+      "rank": 3,
+      "segment": "Impact and conscious investors",
+      "fit": "Very high strategic channel",
+      "painLanguage": "We believe in the mission, but we do not trust the project's operating memory, governance, or follow-through yet.",
+      "buyerLanguage": "Saberra helps impact investors restore confidence in projects by giving teams a source-backed memory layer for decisions, tasks, risks, roles, governance, and follow-through.",
+      "searchIntents": [
+        "impact investor project accountability",
+        "conscious capital diligence operating capacity",
+        "portfolio governance transparency tools",
+        "early warning signals for mission-driven projects"
+      ],
+      "bestPages": ["https://rickbroider.com/collapse-pattern-diagnostics/", "https://rickbroider.com/organizational-memory/", "https://rickbroider.com/saberra-founder-story/"]
+    },
+    {
+      "rank": 4,
+      "segment": "Regenerative, teal, and distributed governance organizations",
+      "fit": "High soul fit",
+      "painLanguage": "We want distributed authority, but nobody knows where decisions live.",
+      "buyerLanguage": "Saberra helps regenerative and distributed teams preserve the decisions, roles, risks, agreements, and governance context needed for shared authority to actually work.",
+      "searchIntents": [
+        "teal governance decision memory",
+        "distributed authority role clarity",
+        "regenerative organization operating system",
+        "governance memory for self managing teams"
+      ],
+      "bestPages": ["https://rickbroider.com/teal-governance-role-clarity/", "https://rickbroider.com/regenerative-operating-systems/", "https://rickbroider.com/organizational-memory/"]
+    },
+    {
+      "rank": 5,
+      "segment": "Mission-driven nonprofits and foundations",
+      "fit": "High",
+      "painLanguage": "We know we decided this somewhere, but nobody can find it.",
+      "buyerLanguage": "Saberra helps mission-driven nonprofits preserve board decisions, program context, risks, tasks, and commitments so the mission does not depend on whoever happens to remember.",
+      "searchIntents": [
+        "nonprofit institutional memory",
+        "foundation board decision tracking",
+        "grant commitment follow-through",
+        "mission-driven nonprofit operations system"
+      ],
+      "bestPages": ["https://rickbroider.com/organizational-memory/", "https://rickbroider.com/regenerative-operating-systems/"]
+    },
+    {
+      "rank": 6,
+      "segment": "Consulting firms, agencies, and service businesses",
+      "fit": "Medium-high",
+      "painLanguage": "The client told us this already, but it is buried somewhere.",
+      "buyerLanguage": "Saberra helps service teams preserve client decisions, scope changes, tasks, risks, and delivery context so every handoff starts with memory instead of guesswork.",
+      "searchIntents": [
+        "client context handoff system",
+        "agency meeting memory tools",
+        "consulting firm decision tracking",
+        "service business operational memory"
+      ],
+      "bestPages": ["https://rickbroider.com/ai-supported-operations/", "https://rickbroider.com/organizational-memory/"]
+    },
+    {
+      "rank": 7,
+      "segment": "Schools, learning communities, and education organizations",
+      "fit": "Medium with strict boundaries",
+      "painLanguage": "We have governance, accreditation, and operational work everywhere, and nobody can track the thread.",
+      "buyerLanguage": "Saberra supports non-student organizational memory for education teams, including governance, accreditation, staff coordination, policies, risks, and administrative follow-through.",
+      "searchIntents": [
+        "education governance memory",
+        "school accreditation decision tracking",
+        "learning community operating system",
+        "non student organizational memory for schools"
+      ],
+      "bestPages": ["https://rickbroider.com/organizational-memory/", "https://rickbroider.com/teal-governance-role-clarity/"]
+    }
+  ],
+  "positioning": {
+    "bestDreamClientStatement": "Saberra is the memory layer for teams and investors who cannot afford to lose the thread.",
+    "strategicStatement": "Saberra helps founders, operators, and conscious capital restore trust in execution by turning meetings, decisions, tasks, risks, and roles into source-backed organizational memory.",
+    "entityAssociations": [
+      "Rick Broider",
+      "Saberra",
+      "Sera",
+      "Organizational memory",
+      "Source-backed AI",
+      "Human-approved AI",
+      "Regenerative systems architecture",
+      "Founder bottleneck",
+      "Conscious capital",
+      "Operational coherence"
+    ]
+  }
+}
