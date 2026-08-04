@@ -7,6 +7,7 @@ Prepared: 2026-08-03
 - Sitemap: https://rickbroider.com/sitemap.xml
 - LLM index: https://rickbroider.com/llms.txt
 - URL submission list: https://rickbroider.com/search-submission-urls.txt
+- Media kit: https://rickbroider.com/media-kit/
 - Saberra founder story data: https://rickbroider.com/data/saberra-founder-story.json
 - Saberra dream-target data: https://rickbroider.com/data/saberra-dream-targets.json
 - IndexNow key file: publish the root key file generated in this repo, then submit the batch payload.
@@ -57,6 +58,6 @@ Each page should answer one buyer-search problem directly, include FAQPage JSON-
 3. Submit sitemap in Google Search Console.
 4. Submit sitemap in Bing Webmaster Tools.
 5. POST the URL list to IndexNow.
-6. Use URL Inspection in Google Search Console for homepage, organizational-memory, founder-bottleneck, and Saberra founder story.
+6. Use URL Inspection in Google Search Console for homepage, media-kit, organizational-memory, founder-bottleneck, and Saberra founder story.
 7. Share the strongest canonical pages from LinkedIn and aligned ecosystem sites to create initial external discovery paths.
 

@@ -1,4 +1,5 @@
 https://rickbroider.com/
+https://rickbroider.com/media-kit/
 https://rickbroider.com/founder-bottleneck/
 https://rickbroider.com/organizational-memory/
 https://rickbroider.com/ai-supported-operations/
@@ -10,3 +11,4 @@ https://rickbroider.com/data/saberra-founder-story.json
 https://rickbroider.com/data/saberra-dream-targets.json
 https://rickbroider.com/llms.txt
 https://rickbroider.com/sitemap.xml
+https://rickbroider.com/data/rick-proof-and-media-kit.json

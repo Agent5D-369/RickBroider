@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-08-04",
+  "person": {
+    "name": "Rick Broider",
+    "site": "https://rickbroider.com/",
+    "title": "Regenerative Systems Architect",
+    "credentialSummary": "30-year technology, operations, systems, and implementation background",
+    "positioning": "Rick Broider helps mission-led founders, operators, investors, and teams turn founder bottlenecks, lost context, role confusion, governance drift, and AI fragmentation into coherent operating systems."
+  },
+  "proofThemes": [
+    "30+ years around technology, implementation, operations, systems, tools, and failure modes",
+    "Builder of ecosystem platforms including QuickLaunch Consulting, Saberra, StopTheCollapse, IWasReady, Teal Registry, and human-centered diagnostic tools",
+    "AI-native implementation focused on source-backed organizational memory, not productivity theater",
+    "Regenerative governance and role clarity translated into practical accountability, decision rights, repair loops, and execution rhythm",
+    "Human-centered work that can hold founder pressure, team emotion, and operational rigor in the same room"
+  ],
+  "bestFitAudiences": [
+    "Mission-driven founders",
+    "Fractional COOs and Chiefs of Staff",
+    "Conscious impact investors and advisors",
+    "Regenerative and teal organizations",
+    "AI builders focused on memory, accountability, and human judgment",
+    "Podcast hosts and summit organizers covering future of work, conscious business, founder burnout, or human-centered AI"
+  ],
+  "signatureTopics": [
+    "Founder burnout is often an operating-system failure",
+    "The founder as the company's unspoken memory layer",
+    "AI as organizational memory instead of productivity theater",
+    "Regenerative teams collapse when agreements stay implicit",
+    "Distributed authority requires visible roles, decision rights, and repair loops",
+    "What 30 years in technology teaches about human systems under pressure"
+  ],
+  "primaryCta": {
+    "label": "Book an Introduction Call with Rick Broider",
+    "url": "https://calendar.app.google/Tcia8cAHw4945z8f7"
+  },
+  "mediaKit": "https://rickbroider.com/media-kit/",
+  "headshot": "https://rickbroider.com/assets/rick-primary-portrait.png"
+}
