@@ -329,7 +329,7 @@ blockquote {
 }
 
 h2 {
-  max-width: min(100%, 18ch);
+  max-width: min(100%, 22ch);
   margin-bottom: 1.15rem;
   font-size: clamp(2.25rem, 5.5vw, 5.35rem);
   line-height: 0.96;
@@ -1018,6 +1018,7 @@ p {
 }
 
 @media (max-width: 1080px) {
+
   .hero-inner {
     grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.42fr);
     gap: 2rem;
@@ -1188,6 +1189,7 @@ p {
 }
 /* Responsive overrides for added brand sections. */
 @media (max-width: 1080px) {
+
   .router-grid,
   .ways-grid,
   .thought-grid,
@@ -1290,6 +1292,7 @@ p {
 }
 /* Responsive proof and call grids. */
 @media (max-width: 1080px) {
+
   .call-grid,
   .cred-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1515,6 +1518,7 @@ p {
 }
 
 @media (max-width: 1080px) {
+
   .conversation-grid,
   .intent-grid,
   .pillar-body {
@@ -1545,6 +1549,7 @@ p {
 
 
 @media (max-width: 1080px) {
+
   .saberra-origin-page .pillar-hero {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1571,5 +1576,104 @@ p {
 
   .origin-visual {
     margin-top: 2rem;
+  }
+}
+
+.media-kit-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) repeat(2, minmax(0, 0.7fr));
+  gap: 1px;
+  padding: 1px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(217, 169, 73, 0.2), rgba(33, 167, 182, 0.16)),
+    rgba(247, 245, 238, 0.08);
+}
+
+.media-kit-grid article {
+  min-height: 18rem;
+  padding: clamp(1.2rem, 2.2vw, 1.65rem);
+  background:
+    linear-gradient(180deg, rgba(247, 245, 238, 0.06), rgba(247, 245, 238, 0.025)),
+    rgba(5, 16, 22, 0.8);
+}
+
+.media-kit-panel-primary {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(1.4rem, 3vw, 2.2rem);
+  background:
+    radial-gradient(circle at 80% 12%, rgba(217, 169, 73, 0.18), transparent 16rem),
+    linear-gradient(135deg, rgba(217, 169, 73, 0.16), rgba(33, 167, 182, 0.08)),
+    rgba(5, 16, 22, 0.9);
+}
+
+.media-kit-panel h3 {
+  max-width: 13ch;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: 0.96;
+}
+
+.media-kit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.clean-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.clean-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.42rem;
+  height: 0.42rem;
+  background: var(--gold-bright);
+  border-radius: 999px;
+}
+
+.anchor-target {
+  position: relative;
+  top: -5rem;
+  display: block;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+@media (max-width: 1080px) {
+  .media-kit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .media-kit-panel-primary {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .media-kit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-kit-actions .button {
+    width: 100%;
   }
 }
