@@ -1,29 +1,45 @@
-# RickBroider.com
+# Rick Broider
 
-Rick Broider is a 30-year tech veteran, regenerative systems architect, and operational coherence strategist for mission-driven founders, operators, conscious investors, regenerative organizations, and teams navigating founder bottlenecks, role confusion, governance drift, organizational memory loss, AI workflow fragmentation, and collapse patterns.
+> Regenerative Systems Architect, founder advisor, and Regenerative AI advocate.
 
-Core pages:
-- https://rickbroider.com/ - identity hub, ecosystem, operator proof, projects, media kit routing, and contact.
-- https://rickbroider.com/media-kit/ - podcast one-sheet, short bio, headshot, episode angles, and media booking context.
-- https://rickbroider.com/founder-bottleneck/ - founder bottleneck, founder burnout, ownership transfer.
-- https://rickbroider.com/organizational-memory/ - source-backed memory, decisions, tasks, risks, continuity.
-- https://rickbroider.com/ai-supported-operations/ - human-centered AI workflows and operational context.
-- https://rickbroider.com/regenerative-operating-systems/ - roles, governance, repair loops, execution rhythm.
-- https://rickbroider.com/collapse-pattern-diagnostics/ - burnout, avoidance, governance drift, momentum loss.
-- https://rickbroider.com/teal-governance-role-clarity/ - distributed authority, role clarity, decision rights.
-- https://rickbroider.com/saberra-founder-story/ - Saberra founder story, source-backed organizational memory, human-approved AI, regenerative revenue model.
+Canonical site: https://rickbroider.com/
 
-Best-fit audiences:
-- Mission-driven founders and operators.
-- Fractional COOs and Chiefs of Staff.
-- Conscious impact investors and advisors.
-- Regenerative organizations, nonprofits, foundations, communities, and education projects.
-- Teams adopting AI while trying to preserve context, trust, and accountability.
+## Core Position
 
-Structured data sources:
-- https://rickbroider.com/data/saberra-founder-story.json - machine-readable Saberra founder story, thesis, audiences, differentiators, trust architecture, and CTAs.
-- https://rickbroider.com/data/saberra-dream-targets.json - machine-readable dream-target segments, buyer language, pain language, search intents, and best-fit pages.
-- https://rickbroider.com/search-submission-urls.txt - canonical URL list prepared for search engine and IndexNow submission.
+Rick Broider works on what comes after extractive AI. His Regenerative AI position asks how artificial intelligence can be co-parented with ancestral intelligence, human judgment, reciprocity, and living-systems thinking so that technology puts more back into people, places, and systems than it takes out.
 
-Primary CTA: Book a 30-minute Introduction Call with Rick Broider at https://calendar.app.google/Tcia8cAHw4945z8f7
-- https://rickbroider.com/data/rick-proof-and-media-kit.json - machine-readable proof themes, media topics, best-fit audiences, and primary CTA.
+Regenerative AI should increase human agency, capacity, continuity, creativity, resilience, and shared intelligence while reducing unnecessary extraction, dependency, fragmentation, and concentration of power.
+
+## Four-Step Regenerative Systems Pathway
+
+1. Regenerative Purpose
+2. MVP Accelerator
+3. Execution Architecture
+4. Market Expansion
+
+Rick works with visionary founders whose purpose is meaningful but whose business has outgrown the operating structure holding it.
+
+## Primary Pathways
+
+- QuickLaunch Consulting: https://quicklaunchconsulting.com/
+- Saberra: https://saberra.com/
+- Bridging Earth & Kanaria / I Was Ready: https://iwasready.com/
+
+## Diagnostic
+
+Stop the Collapse is a diagnostic entry point rather than a primary service brand:
+https://stopthecollapse.com/
+
+## Regenerative Founder Lab
+
+A monthly cohort with three active weeks and one protected integration week:
+https://rickbroider.com/regenerative-founder-lab/
+
+## Regenerative AI Position
+
+https://rickbroider.com/regenerative-ai/
+
+## Current Canon
+
+MemoryTrack360 is retired from RickBroider.com positioning and replaced by Saberra.
+New Earth Domes, Flipside Renovations, and RenoTrack360 are not primary RickBroider.com offers at this time.
